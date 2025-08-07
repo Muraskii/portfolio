@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    This portfolio site is built using modern, semantic HTML and leverages
+    external fonts and icons via CDNs. The design is inspired by the clean,
+    elegant interfaces of companies like Apple and Google. Responsive
+    layout, smooth scrolling, and subtle animations contribute to a
+    professional and user‑friendly experience.
+  -->
+  <title>Vedant Vishwakarma&nbsp;|&nbsp;Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social and section icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" integrity="sha512-3+/gkYdqCFJS06ZokbS2mkMiLVHMo7Hu0P3cy3GCBx1IOvtYdxQzHhh+uAe+eL3Qx1jJ30KQOej0hHxqZYjn3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Additional serif font for enhanced branding -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background layers for gradient cross‑fade between sections -->
+  <div class="section-bg bg1"></div>
+  <div class="section-bg bg2"></div>
+  <!-- Hero/Header section with background video; removed static background-image -->
+  <header id="hero">
+    <!-- Subtle looping video plays in the background. It's muted and loops infinitely. -->
+    <video class="hero-video" src="videos/hero.mp4" autoplay muted loop playsinline></video>
+    <nav id="navbar">
+      <div class="nav-inner container">
+        <!-- Enhanced logo splits first and last name for custom styling -->
+        <div class="logo"><span class="first-name">Vedant</span><span class="last-name">Vishwakarma</span></div>
+        <ul class="nav-links">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <!-- New Hobbies section breaks up the flow with a fun, casual vibe -->
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#chat">Chat</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-icon" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+    <div class="hero-content container">
+      <h1>Vedant&nbsp;Vishwakarma</h1>
+      <p class="tagline">Keen to pursue hands‑on research in semiconductor device modelling and design at the graduate level.</p>
+      <div class="hero-actions">
+        <!-- Download link points back to the uploaded resume -->
+        <a href="Resume-UG.pdf" class="btn primary" download>Download CV</a>
+        <a href="#projects" class="btn secondary">Explore My Work</a>
+      </div>
+    </div>
+    <div class="scroll-down"><i class="fas fa-chevron-down"></i></div>
+  </header>
+
+  <main>
+    <!-- Education Section -->
+    <section id="education" class="section container hidden">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-university"></i></div>
+          <div class="timeline-content">
+            <h3>B.Tech in Electronics &amp; Communication Engineering</h3>
+            <span class="timeline-date">2021&nbsp;–&nbsp;2025</span>
+            <p>Vellore Institute of Technology, Vellore, India&nbsp;&nbsp;|&nbsp;&nbsp;<strong>CGPA:</strong> 8.97&nbsp;/&nbsp;10</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-school"></i></div>
+          <div class="timeline-content">
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <span class="timeline-date">2020&nbsp;–&nbsp;2021</span>
+            <p>Indian School DaresSalaam, Dar es Salaam, Tanzania&nbsp;&nbsp;|&nbsp;&nbsp;<strong>Percentage:</strong> 90.2%</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-school"></i></div>
+          <div class="timeline-content">
+            <h3>Secondary School Certificate (SSC)</h3>
+            <span class="timeline-date">2018&nbsp;–&nbsp;2019</span>
+            <p>Indian School DaresSalaam, Dar es Salaam, Tanzania&nbsp;&nbsp;|&nbsp;&nbsp;<strong>Percentage:</strong> 95.2%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section container hidden">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+          <div class="timeline-content">
+            <h3>SSPL DRDO&nbsp;—&nbsp;Internship Trainee</h3>
+            <span class="timeline-date">Nov&nbsp;2023</span>
+            <p class="location">New Delhi, India</p>
+            <ul>
+              <li>Implemented C++ image processing algorithms, enhancing face and edge detection efficiency across multiple test scenarios.</li>
+              <li>Strengthened debugging skills, independently resolving issues faster in verification environments.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-industry"></i></div>
+          <div class="timeline-content">
+            <h3>Mount&nbsp;Meru&nbsp;Soyco&nbsp;—&nbsp;Industrial Intern</h3>
+            <span class="timeline-date">May&nbsp;–&nbsp;Jun&nbsp;2024</span>
+            <p class="location">Kayonza, Rwanda</p>
+            <ul>
+              <li>Analysed production processes for plastic bottle manufacturing to optimise cost and yield.</li>
+              <li>Assisted with weighbridge operations and conducted cost–benefit analysis for inventory management.</li>
+              <li>Received introductory training on PLC programming and automation systems.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-microchip"></i></div>
+          <div class="timeline-content">
+            <h3>Maven Silicon&nbsp;—&nbsp;Project Intern</h3>
+            <span class="timeline-date">Jun&nbsp;–&nbsp;Jul&nbsp;2024</span>
+            <p class="location">Remote</p>
+            <ul>
+              <li>Developed a 32‑bit pipelined processor using Verilog HDL, analysing signal propagation delays, timing margins and logic‑level behaviour.</li>
+              <li>Utilised UVM testbench to streamline verification processes, enhancing test coverage and accelerating debugging for complex designs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container hidden">
+      <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+      <div class="projects-grid">
+        <!-- MIMO Patch Antenna Design -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>MIMO Patch Antenna Design</h3>
+            <span class="project-year">2023</span>
+          </div>
+          <p class="project-tools">Microwave Studio Suite</p>
+          <p class="project-summary">4‑element MIMO patch antenna design achieving high gain and low return loss.</p>
+          <div class="project-overlay">
+            <ul>
+              <li>Designed a 4‑element MIMO patch antenna with optimised λ/4 spacing for minimal coupling.</li>
+              <li>Achieved gains of 6.1&nbsp;and&nbsp;6.8&nbsp;dBi with effective impedance matching and low return loss.</li>
+              <li>Simulated radiation patterns and S‑parameters, confirming improved signal integrity.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- RISC‑V RV32I Processor Design -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>RISC‑V RV32I Processor Design</h3>
+            <span class="project-year">2024</span>
+          </div>
+          <p class="project-tools">Verilog, UVM, Digital Design</p>
+          <p class="project-summary">5‑stage pipelined RV32I processor core implemented and verified using UVM.</p>
+          <div class="project-overlay">
+            <ul>
+              <li>Implemented a 5‑stage pipelined RV32I processor core in Verilog.</li>
+              <li>Verified the design using a UVM testbench to ensure functional correctness.</li>
+              <li>Focused on timing optimisation and stable execution of ISA‑compliant instructions.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- CAN‑Based Accident Avoidance System -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>CAN‑Based Accident Avoidance System</h3>
+            <span class="project-year">2024</span>
+          </div>
+          <p class="project-tools">Arduino, MCP2515</p>
+          <p class="project-summary">Sensor‑based collision avoidance prototype integrating ultrasonic sensing and CAN‑controlled braking.</p>
+          <div class="project-overlay">
+            <ul>
+              <li>Designed a sensor‑based collision avoidance prototype using ultrasonic sensors and the CAN protocol.</li>
+              <li>Integrated servo‑controlled braking with real‑time distance feedback and status display.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Deep Learning for Channel Estimation -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Deep Learning for Channel Estimation in UV&nbsp;MIMO Systems</h3>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-tools">Python, TensorFlow, MATLAB</p>
+          <p class="project-summary">Deep learning models enhance channel estimation for ultraviolet MIMO communication.</p>
+          <div class="project-overlay">
+            <ul>
+              <li>Trained deep learning models to improve channel estimation in ultraviolet MIMO communication.</li>
+              <li>Compared performance with traditional estimation under noise and signal distortion.</li>
+              <li>Validated improvements through reconstruction metrics and error rate reduction.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container hidden">
+      <h2><i class="fas fa-tools"></i> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programming</h3>
+          <p>Embedded&nbsp;C, C, Python, Verilog</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools&nbsp;&amp;&nbsp;Platforms</h3>
+          <p>STM32CubeIDE, Keil uVision, Proteus, LTspice, Vivado, Cadence Virtuoso, Git</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-lightbulb"></i> Domain Knowledge</h3>
+          <p>Microcontrollers, GPIOs, Embedded Protocols, Digital Electronics, Analog IC Design</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section container hidden">
+      <h2><i class="fas fa-heart"></i> Hobbies</h2>
+      <div class="hobbies-grid">
+        <!-- Working Out -->
+        <div class="hobby-card">
+          <!-- Video plays on hover and stays contained within the card -->
+          <!-- Include the autoplay attribute so the video begins playing when revealed.  -->
+          <video class="hobby-video" src="videos/workout.mp4" muted loop autoplay playsinline></video>
+          <div class="hobby-content">
+            <div class="hobby-icon"><i class="fas fa-dumbbell"></i></div>
+            <h3>Working Out</h3>
+            <p>Staying fit through strength training and cardio sessions.</p>
+          </div>
+        </div>
+        <!-- Learning New Things -->
+        <div class="hobby-card">
+          <!-- Include autoplay to ensure the video plays when it fades into view. -->
+          <video class="hobby-video" src="videos/reading.mp4" muted loop autoplay playsinline></video>
+          <div class="hobby-content">
+            <div class="hobby-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Learning New Things</h3>
+            <p>Exploring new technologies, ideas and skills every day.</p>
+          </div>
+        </div>
+        <!-- Running -->
+        <div class="hobby-card">
+          <video class="hobby-video" src="videos/running.mp4" muted loop autoplay playsinline></video>
+          <div class="hobby-content">
+            <div class="hobby-icon"><i class="fas fa-running"></i></div>
+            <h3>Running</h3>
+            <p>Hitting the track to clear the mind and stay active.</p>
+          </div>
+        </div>
+        <!-- Cooking Fun Meals -->
+        <div class="hobby-card">
+          <video class="hobby-video" src="videos/cooking.mp4" muted loop autoplay playsinline></video>
+          <div class="hobby-content">
+            <div class="hobby-icon"><i class="fas fa-utensils"></i></div>
+            <h3>Cooking Fun Meals</h3>
+            <p>Experimenting with flavours and creating delicious dishes.</p>
+          </div>
+        </div>
+        <!-- Playing the Piano -->
+        <div class="hobby-card">
+          <video class="hobby-video" src="videos/piano.mp4" muted loop autoplay playsinline></video>
+          <div class="hobby-content">
+            <div class="hobby-icon"><i class="fas fa-music"></i></div>
+            <h3>Playing the Piano</h3>
+            <p>Finding harmony and relaxation in keyboard melodies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section container hidden">
+      <h2><i class="fas fa-award"></i> Certifications</h2>
+      <div class="cert-grid">
+        <!-- Analog &amp; Digital IC Design -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>Analog &amp; Digital IC Design</h3>
+            <span class="cert-date">Sep&nbsp;2024</span>
+          </div>
+          <p class="cert-institution">VIT&nbsp;Vellore</p>
+          <p class="cert-summary">Practical training in analog and digital circuit design using Cadence tools.</p>
+          <div class="cert-overlay">
+            <ul>
+              <li>Built transistor‑level analog and digital circuits in Cadence Virtuoso.</li>
+              <li>Developed layouts and performed simulation to validate functional performance.</li>
+              <li>Explored device characteristics, sizing trade‑offs and signal integrity.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- RISC‑V ISA RV32I RTL Design -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>RISC‑V RV32I RTL Design</h3>
+            <span class="cert-date">Jun&nbsp;–&nbsp;Jul&nbsp;2024</span>
+          </div>
+          <p class="cert-institution">Maven&nbsp;Silicon</p>
+          <p class="cert-summary">Hands‑on RTL design and verification of the RISC‑V architecture.</p>
+          <div class="cert-overlay">
+            <ul>
+              <li>Implemented synthesizable modules for a 32‑bit RISC‑V processor core.</li>
+              <li>Integrated pipeline stages and verified functionality using a UVM testbench.</li>
+              <li>Analysed timing paths and optimised critical sections for reliable operation.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Static Timing Analysis -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>Static Timing Analysis&nbsp;I</h3>
+            <span class="cert-date">Nov&nbsp;2024</span>
+          </div>
+          <p class="cert-institution">Udemy</p>
+          <p class="cert-summary">Theory and practice of static timing analysis for digital circuits.</p>
+          <div class="cert-overlay">
+            <ul>
+              <li>Studied timing constraints, clock tree synthesis and setup/hold checks.</li>
+              <li>Applied STA concepts using industry‑standard EDA tools.</li>
+              <li>Investigated slack calculation, jitter modelling and path optimisation.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- VLSI Design -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>VLSI Design</h3>
+            <span class="cert-date">Dec&nbsp;2024</span>
+          </div>
+          <p class="cert-institution">Internshala&nbsp;Trainings</p>
+          <p class="cert-summary">Comprehensive course on VLSI design methodologies and flows.</p>
+          <div class="cert-overlay">
+            <ul>
+              <li>Covered digital logic design, CMOS circuits and hierarchical design flows.</li>
+              <li>Explored synthesis, placement &amp; routing and physical verification.</li>
+              <li>Implemented mini‑projects reinforcing design principles across the flow.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Chat with Me Section -->
+    <section id="chat" class="section container hidden">
+      <h2><i class="fas fa-comments"></i> Chat with Me</h2>
+      <div class="chat-card">
+        <form class="chat-form" onsubmit="event.preventDefault();">
+        <div class="name-fields">
+          <div class="form-group">
+            <label for="first-name">First Name <span class="required">(required)</span></label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name <span class="required">(required)</span></label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address <span class="required">(required)</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject <span class="required">(required)</span></label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span class="required">(required)</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn chat-btn">Chat with Me</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact Section (also acts as footer) -->
+  <footer id="contact" class="section container hidden">
+    <h2><i class="fas fa-paper-plane"></i> Get in Touch</h2>
+    <div class="contact-grid">
+      <a href="mailto:vedantvish07@gmail.com" class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>vedantvish07@gmail.com</span>
+      </a>
+      <a href="tel:+919717192160" class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>+91&nbsp;97171&nbsp;92160</span>
+      </a>
+      <a href="https://linkedin.com/in/vedant-vishwakarma" target="_blank" rel="noopener" class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/Muraskii" target="_blank" rel="noopener" class="contact-item">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <p class="footer-note">© <span id="year"></span> Vedant Vishwakarma • All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for interactivity and animations -->
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.querySelector('.mobile-menu-icon');
+      const navLinks = document.querySelector('#navbar .nav-links');
+      if (menuIcon && navLinks) {
+        menuIcon.addEventListener('click', function () {
+          navLinks.classList.toggle('open');
+        });
+      }
+      // Close menu when link clicked and smooth scroll to section
+      const navItems = document.querySelectorAll('#navbar .nav-links a');
+      navItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+          // Close the mobile menu if it is open
+          if (navLinks.classList.contains('open')) {
+            navLinks.classList.remove('open');
+          }
+          // Smoothly scroll to target section instead of default jump
+          const href = item.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            event.preventDefault();
+            const targetEl = document.querySelector(href);
+            if (targetEl) {
+              targetEl.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        });
+      });
+      // Intersection Observer to reveal sections
+      const hiddenSections = document.querySelectorAll('.hidden');
+      const observer = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      hiddenSections.forEach(function (section) { observer.observe(section); });
+      // Scroll down arrow behaviour
+      const scrollDown = document.querySelector('.scroll-down');
+      if (scrollDown) {
+        scrollDown.addEventListener('click', function () {
+          const firstSection = document.querySelector('main section');
+          if (firstSection) {
+            firstSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+      // Update year in footer
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      /*
+       * Gradient cross‑fade between sections
+       *
+       * Define a pastel cream colour gradient for each section. As the user scrolls
+       * through a section, the current gradient fades out while the next
+       * section's gradient fades in. This effect mimics the smooth transitions
+       * seen on design portfolios like erikkindel.com, but uses lighter colours.
+       */
+      const gradientMap = {
+        // Use very subtle pastel cream gradients to avoid harsh colours. Each pair
+        // consists of two off‑white hues with a hint of warmth or coolness.
+        education: 'linear-gradient(to right, #fffdf3, #faf5e1)',       // warm cream
+        experience: 'linear-gradient(to right, #fefce9, #fbf5d0)',      // pale butter
+        projects: 'linear-gradient(to right, #fef8f3, #fceede)',        // light peach
+        skills: 'linear-gradient(to right, #fbf8ff, #f5effe)',          // soft lavender
+        hobbies: 'linear-gradient(to right, #fff8fb, #fdf4ff)',         // playful pink‑lilac for hobbies
+        certifications: 'linear-gradient(to right, #f6fbfb, #ecf6f7)', // faint aqua
+        chat: 'linear-gradient(to right, #f7f5f2, #f0ece7)',           // gentle cream for chat section
+        contact: 'linear-gradient(to right, #f7f7f7, #f1f1f1)'          // neutral grey
+      };
+      const sectionsInOrder = ['education','experience','projects','skills','hobbies','certifications','chat','contact'];
+      const bg1 = document.querySelector('.section-bg.bg1');
+      const bg2 = document.querySelector('.section-bg.bg2');
+      function updateBackgrounds() {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const viewportHeight = window.innerHeight;
+        let currentIndex = 0;
+        // Determine current section based on scroll position relative to mid viewport
+        for (let i = sectionsInOrder.length - 1; i >= 0; i--) {
+          const sectionEl = document.getElementById(sectionsInOrder[i]);
+          if (sectionEl && (sectionEl.getBoundingClientRect().top + scrollY) <= scrollY + viewportHeight * 0.5) {
+            currentIndex = i;
+            break;
+          }
+        }
+        const currentSectionId = sectionsInOrder[currentIndex];
+        const nextSectionId = sectionsInOrder[Math.min(currentIndex + 1, sectionsInOrder.length - 1)];
+        // Set gradient backgrounds for current and next sections
+        if (bg1 && bg2) {
+          bg1.style.backgroundImage = gradientMap[currentSectionId];
+          bg2.style.backgroundImage = gradientMap[nextSectionId];
+        }
+        const currentEl = document.getElementById(currentSectionId);
+        if (currentEl) {
+          const sectionTop = currentEl.offsetTop;
+          const sectionHeight = currentEl.offsetHeight;
+          let ratio = (scrollY - sectionTop) / sectionHeight;
+          ratio = Math.min(Math.max(ratio, 0), 1);
+          // Fade current out and next in
+          if (bg1 && bg2) {
+            bg1.style.opacity = 1 - ratio;
+            bg2.style.opacity = ratio;
+          }
+        }
+      }
+      // Initialise backgrounds and attach event listeners
+      updateBackgrounds();
+      window.addEventListener('scroll', updateBackgrounds);
+      window.addEventListener('resize', updateBackgrounds);
+
+    });
+  </script>
+</body>
+</html>
